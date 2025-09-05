@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0" />
+  <object class="GtkWindow" id="main_window">
+    <property name="title">Main menu</property>
+    <property name="default_width">860</property>
+    <property name="default_height">540</property>
+    <child>
+      <object class="GtkPaned" id="main_paned">
+        <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
+        <property name="position">774</property>
+
+        <child>
+          <object class="GtkBox" id="workspace_box">
+            <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+
+            <child>
+              <object class="GtkLabel" id="label">
+                <property name="label">Hello, world!</property>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkBox" id="menu_box">
+            <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+
+            <child>
+              <object class="GtkButton" id="button">
+                <property name="label">Close</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
